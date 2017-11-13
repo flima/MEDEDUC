@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!-- MATERIAL DEFAULT COLORS -->
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent">#FF4081</color>
+
+    <!-- DEFAULT COLOR -->
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- BUTTON DEFAULT COLORS -->
+    <color name="btn_text_color_disabled">#efffffff</color>
+    <color name="btn_text_color_enabled">#FFF</color>
+    <color name="btn_background_disabled">#BDBDBD</color>
+    <color name="btn_background_enabled">#2196F3</color>
+    <color name="btn_ripple_color">#8e424242</color>
+
+    <!-- SCORE -->
+    <color name="score_status_default">#BDBDBD</color>
+    <color name="score_status_right">#4CAF50</color>
+    <color name="score_status_wrong">#F44336</color>
+
 </resources>

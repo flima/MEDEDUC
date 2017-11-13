@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/score_width_container"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/score_container_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/score_btn_current_level"
+        style="@style/Button.Score"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/score_height_btn_current_level"
+        tools:text="Niv" />
+
+</LinearLayout>
