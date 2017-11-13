@@ -21,18 +21,21 @@ class WizardActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        txtMessage.text = resources.getStringArray(R.array.wizard_introduction_messages)[currentStepWizard]
-        btnNext.text = resources.getStringArray(R.array.wizard_button_text)[currentStepWizard]
+        setupCurrentStep()
         btnNext.setOnClickListener {
 
             if(++currentStepWizard < maxStepWizard){
-                txtMessage.text = resources.getStringArray(R.array.wizard_introduction_messages)[currentStepWizard]
-                btnNext.text = resources.getStringArray(R.array.wizard_button_text)[currentStepWizard]
+                setupCurrentStep()
             } else {
                 startActivity<HomeActivity>()
             }
 
         }
+    }
+
+    private fun setupCurrentStep() {
+        txtMessage.text = resources.getStringArray(R.array.wizard_introduction_messages)[currentStepWizard]
+        btnNext.text = resources.getStringArray(R.array.wizard_button_text)[currentStepWizard]
     }
 
 }
