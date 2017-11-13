@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">MEDEDUC</string>
-    
+
     <!-- WIZARD -->
     <string-array name="wizard_introduction_messages">
         <item>Vamos aprender medicina jogando?</item>
-        <item>A cada nível concluído você recebe um novo\nequipamento para o seu constultório.</item>
+        <item>A cada nível concluído você recebe um novo\nequipamento para o seu consultório.</item>
         <item>O jogo termina quando você estiver fera\ne com o seu consultório pronto.</item>
     </string-array>
 

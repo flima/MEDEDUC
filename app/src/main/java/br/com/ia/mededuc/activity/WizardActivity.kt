@@ -28,6 +28,7 @@ class WizardActivity : AppCompatActivity() {
                 setupCurrentStep()
             } else {
                 startActivity<HomeActivity>()
+                finish()
             }
 
         }

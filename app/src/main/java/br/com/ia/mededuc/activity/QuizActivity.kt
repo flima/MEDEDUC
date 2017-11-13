@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.view.WindowManager
 import br.com.ia.mededuc.R
 
-class HomeActivity : AppCompatActivity() {
+class QuizActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_quiz)
     }
-
 }

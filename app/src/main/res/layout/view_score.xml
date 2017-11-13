@@ -16,6 +16,6 @@
         style="@style/Button.Score"
         android:layout_width="match_parent"
         android:layout_height="@dimen/score_height_btn_current_level"
-        tools:text="Niv" />
+        android:text="Niv" />
 
 </LinearLayout>
