@@ -15,18 +15,24 @@
         android:src="@drawable/img_avatar_doctor" />
 
     <br.com.ia.mededuc.widget.QuestionView
-        android:layout_above="@+id/imgAvatar"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="-50dp"
-        android:layout_toEndOf="@+id/imgAvatar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <br.com.ia.mededuc.widget.ScoreView
+        android:id="@+id/qtvQuestions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_normal"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@+id/imgAvatar"
+        android:layout_toStartOf="@+id/scvScore" />
+
+    <br.com.ia.mededuc.widget.ScoreView
+        android:id="@+id/scvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/margin_normal" />
 
 </RelativeLayout>

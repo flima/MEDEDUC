@@ -5,7 +5,7 @@
     android:background="@drawable/bg_home">
 
     <ImageView
-        android:id="@+id/img_avatar"
+        android:id="@+id/imgAvatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -14,7 +14,30 @@
         android:contentDescription="Avatar"
         android:src="@drawable/img_avatar_doctor" />
 
+    <Button
+        android:id="@+id/btnShowEquipments"
+        style="@style/Button.Default"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="Mostrar equipamentos"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnNewGame"
+        style="@style/Button.Default"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="Novo Jovo"
+        android:visibility="gone" />
+
     <br.com.ia.mededuc.widget.MainOptionsView
+        android:id="@+id/movOptions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -4,81 +4,81 @@
     android:layout_height="wrap_content">
 
     <Button
-        android:id="@+id/main_options_view_btn_leveling"
+        android:id="@+id/btnLeveling"
         style="@style/Button.Default"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/main_option_height_btn_others"
-        android:layout_alignEnd="@+id/main_options_view_btn_level_five"
-        android:layout_alignStart="@+id/main_options_view_btn_level_one"
+        android:layout_alignEnd="@+id/btnLevelFive"
+        android:layout_alignStart="@+id/btnLevelOne"
         android:text="@string/main_options_label_leveling" />
 
     <Button
-        android:id="@+id/main_options_view_btn_reinforcement"
+        android:id="@+id/btnReinforcement"
         style="@style/Button.Default"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/main_option_height_btn_others"
-        android:layout_alignEnd="@+id/main_options_view_btn_level_five"
-        android:layout_alignStart="@+id/main_options_view_btn_level_one"
-        android:layout_below="@+id/main_options_view_btn_leveling"
+        android:layout_alignEnd="@+id/btnLevelFive"
+        android:layout_alignStart="@+id/btnLevelOne"
+        android:layout_below="@+id/btnLeveling"
         android:layout_marginTop="@dimen/margin_small"
         android:enabled="false"
         android:text="@string/main_options_label_reinforcement" />
 
     <Button
-        android:id="@+id/main_options_view_btn_level_one"
+        android:id="@+id/btnLevelOne"
         style="@style/Button.Default"
         android:layout_width="@dimen/main_option_width_btn_level"
         android:layout_height="@dimen/main_option_height_btn_level"
-        android:layout_below="@+id/main_options_view_btn_reinforcement"
+        android:layout_below="@+id/btnReinforcement"
         android:layout_marginRight="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
         android:enabled="false"
         android:text="@string/main_options_label_level_one" />
 
     <Button
-        android:id="@+id/main_options_view_btn_level_two"
+        android:id="@+id/btnLevelTwo"
         style="@style/Button.Default"
         android:layout_width="@dimen/main_option_width_btn_level"
         android:layout_height="@dimen/main_option_height_btn_level"
-        android:layout_below="@+id/main_options_view_btn_reinforcement"
+        android:layout_below="@+id/btnReinforcement"
         android:layout_marginRight="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
-        android:layout_toRightOf="@+id/main_options_view_btn_level_one"
+        android:layout_toRightOf="@+id/btnLevelOne"
         android:enabled="false"
         android:text="@string/main_options_label_level_two" />
 
     <Button
-        android:id="@+id/main_options_view_btn_level_three"
+        android:id="@+id/btnLevelThree"
         style="@style/Button.Default"
         android:layout_width="@dimen/main_option_width_btn_level"
         android:layout_height="@dimen/main_option_height_btn_level"
-        android:layout_below="@+id/main_options_view_btn_reinforcement"
+        android:layout_below="@+id/btnReinforcement"
         android:layout_marginRight="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
-        android:layout_toRightOf="@+id/main_options_view_btn_level_two"
+        android:layout_toRightOf="@+id/btnLevelTwo"
         android:enabled="false"
         android:text="@string/main_options_label_level_three" />
 
     <Button
-        android:id="@+id/main_options_view_btn_level_four"
+        android:id="@+id/btnLevelFour"
         style="@style/Button.Default"
         android:layout_width="@dimen/main_option_width_btn_level"
         android:layout_height="@dimen/main_option_height_btn_level"
-        android:layout_below="@+id/main_options_view_btn_reinforcement"
+        android:layout_below="@+id/btnReinforcement"
         android:layout_marginRight="@dimen/margin_small"
         android:layout_marginTop="@dimen/margin_small"
-        android:layout_toRightOf="@+id/main_options_view_btn_level_three"
+        android:layout_toRightOf="@+id/btnLevelThree"
         android:enabled="false"
         android:text="@string/main_options_label_level_four" />
 
     <Button
-        android:id="@+id/main_options_view_btn_level_five"
+        android:id="@+id/btnLevelFive"
         style="@style/Button.Default"
         android:layout_width="@dimen/main_option_width_btn_level"
         android:layout_height="@dimen/main_option_height_btn_level"
-        android:layout_below="@+id/main_options_view_btn_reinforcement"
+        android:layout_below="@+id/btnReinforcement"
         android:layout_marginTop="@dimen/margin_small"
-        android:layout_toRightOf="@+id/main_options_view_btn_level_four"
+        android:layout_toRightOf="@+id/btnLevelFour"
         android:enabled="false"
         android:text="@string/main_options_label_level_five" />
 

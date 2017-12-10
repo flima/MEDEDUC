@@ -17,9 +17,20 @@
     <color name="btn_background_enabled">#2196F3</color>
     <color name="btn_ripple_color">#8e424242</color>
 
+    <!-- MAIN OPTIONS -->
+    <color name="main_options_btn_background_default">@color/btn_text_color_default</color>
+    <color name="main_options_btn_background_reinforcement">#F44336</color>
+    <color name="main_options_btn_background_ok">#4CAF50</color>
+
     <!-- SCORE -->
     <color name="score_status_default">#BDBDBD</color>
     <color name="score_status_right">#4CAF50</color>
     <color name="score_status_wrong">#F44336</color>
+
+
+    <!-- QUESTION -->
+    <color name="question_answer_default">#FFF</color>
+    <color name="question_answer_right">#4CAF50</color>
+    <color name="question_answer_wrong">#F44336</color>
 
 </resources>

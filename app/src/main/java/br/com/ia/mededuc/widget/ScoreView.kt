@@ -1,15 +1,13 @@
 package br.com.ia.mededuc.widget
 
 import android.content.Context
-import android.support.v4.content.ContextCompat
 import android.util.AttributeSet
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import br.com.ia.mededuc.R
-import br.com.ia.mededuc.extensions.bind
+import kotlinx.android.synthetic.main.view_score.view.*
 import org.jetbrains.anko.dimen
 
 /**
@@ -19,8 +17,11 @@ class ScoreView @JvmOverloads
 constructor(context: Context, attrs: AttributeSet? = null, defStyle: Int = 0) :
         FrameLayout(context, attrs, defStyle) {
 
-    private val containerStatus: LinearLayout by bind(R.id.score_container_status)
-    private val btnCurrentStatus: Button by bind(R.id.score_btn_current_level)
+    enum class Status {
+        OK, NOK
+    }
+
+    private var nextPosition = 0
 
     init {
         inflate(context, R.layout.view_score, this)
@@ -37,6 +38,14 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyle: Int = 0) :
             status.layoutParams = layout
             status.setBackgroundResource(R.color.score_status_default)
             containerStatus.addView(status)
+        }
+    }
+
+    fun changeNextStatusScore(status: Status) {
+        if (status.equals(Status.OK)) {
+            containerStatus.getChildAt(nextPosition++).setBackgroundResource(R.color.score_status_right)
+        } else {
+            containerStatus.getChildAt(nextPosition++).setBackgroundResource(R.color.score_status_wrong)
         }
     }
 

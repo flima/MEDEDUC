@@ -1,9 +1,11 @@
 package br.com.ia.mededuc.activity
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
 import br.com.ia.mededuc.R
+import br.com.ia.mededuc.domain.model.User
+import br.com.ia.mededuc.utils.Preferences
 import kotlinx.android.synthetic.main.activity_wizard.*
 import org.jetbrains.anko.startActivity
 
@@ -17,7 +19,12 @@ class WizardActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_wizard)
-        setupView()
+        if (Preferences.getUser(this).level.valueLevel > User.Level.LEVELING.valueLevel) {
+            startActivity<HomeActivity>()
+            finish()
+        } else {
+            setupView()
+        }
     }
 
     private fun setupView() {
